@@ -69,8 +69,8 @@
     "vhdStorageContainerName": "vhds",
     "pmNsgName": "pmNSG",
     "mrpNsgName": "mrpNSG",
-    "pmVmSize": "Standard_D2_V2",
-    "mrpVmSize": "Standard_A2",
+    "pmVmSize": "Standard_B1ms",
+    "mrpVmSize": "Standard_B1s",
     "pmVmName": "[toLower(parameters('pmDnsNameForPublicIP'))]",
     "mrpVmName": "[toLower(parameters('mrpDnsNameForPublicIP'))]",
     "virtualNetworkName": "puppetVNET",
@@ -454,7 +454,7 @@
         "autoUpgradeMinorVersion": true,
         "settings": {
           "fileUris": [
-            "https://raw.githubusercontent.com/Microsoft/PartsUnlimitedMRP/master/Labfiles/DevOps200.2x-InfrastructureasCode/Puppet/env/install_puppetenterprise.sh"
+            "https://raw.githubusercontent.com/171485/PartsUnlimitedMRP/master/Labfiles/AZ-400T05-ImplemntgAppInfra/Labfiles/M04/Puppet/env/install_puppetenterprise.sh"
           ]
         },
         "protectedSettings": {
